@@ -1,0 +1,133 @@
+.cart-container {
+    margin: 20px;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.cart-container h2 {
+    margin-bottom: 20px;
+}
+
+.cart-container h2 span {
+    color: #9893fb;
+}
+
+.cart-header {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr 1fr 1fr;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 10px;
+    border-bottom: 1px solid #ddd;
+}
+
+.cart-items {
+    list-style: none;
+    padding: 0;
+    
+}
+
+.cart-item {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr 1fr 1fr;
+    align-items: center;
+    text-align: center;
+    padding: 10px 0;
+    border-bottom: 1px solid #ddd;
+}
+
+.product-info {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.product-images {
+    width: 100px;
+    height: 150px;
+    object-fit: fill; /* cover */
+}
+
+.quantity-controls {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+}
+
+.quantity-btn {
+    background-color: #ddd;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.quantity-input {
+    width: auto;
+    max-width: 60px;
+    text-align: center;
+    border: 1px solid #ddd;
+    padding: 5px;
+    outline: none;
+}
+
+.delete-btn {
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: #333;
+    font-size: 20px;
+    transition: transform 0.2s ease;
+}
+
+.delete-btn:hover {
+    color: #9893fb;
+}
+
+.cart-summary {
+    margin-top: 20px;
+    width: 35%;
+    margin-left: auto;
+    text-align:left;
+}
+
+.cart-summary h2 {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+    border-bottom: 2px solid #ddd;
+    padding-bottom: 5px;
+}
+
+.cart-summary h2 span {
+    color: #9893fb;
+}
+
+.cart-summary p {
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 0;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 5px;
+}
+
+.cart-summary p span {
+    font-weight: bold;
+}
+
+.total {
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 15px;
+}
+
+.check-out {
+    width: 100%;
+    padding: 5px;
+    background-color: #9893fb;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+}

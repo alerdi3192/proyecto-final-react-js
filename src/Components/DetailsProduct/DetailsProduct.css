@@ -1,0 +1,145 @@
+.detalles {
+   z-index: 10;
+}
+
+.product-details {
+   background:url(./src/assets/bg.png);
+   display: flex;
+   justify-content: space-between;
+   align-items: flex-start;
+   gap: 30px;
+   padding: 30px;
+   color: #333;
+
+ }
+
+ .product-details img {
+   width: 200px;
+   height: 300px;
+ }
+
+ .product-details .image-small {
+    width: 80px;
+    height: 80px;
+ }
+
+ .product-infos {
+    flex: 1;
+    max-width: 600px;
+ }
+
+ .product-infos h1 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+ }
+
+ .product-infos .price {
+    font-size: 28px;
+    color: #9893fb;
+    font-weight: bold;
+    margin-bottom: 15px;
+ }
+
+ .product-infos .description {
+    font-size: 16px;
+    margin-bottom: 20px;
+    line-height: 1.6;
+ }
+
+ .add-to-cart {
+   margin: 20px 10px;
+   padding: 15px 20px;
+   background-color:#9893fb;
+   color: #fff;
+   border-radius: 5px;
+   text-transform: uppercase;
+   font-weight: bold;
+   cursor: pointer;
+   transition: all 0.3s;
+ }
+
+ .add-to-cart:hover {
+    background-color: green;
+ }
+
+ .btn-edit {
+   margin: 20px 10px;
+   padding: 15px 20px;
+   background-color: yellow;
+   color: #333;
+   border-radius: 5px;
+   text-transform: uppercase;
+   font-weight: bold;
+   cursor: pointer;
+   transition: all 0.3s;
+ }
+
+ .btn-edit:hover {
+   background-color: green;
+   color: #fff;
+ }
+
+ .btn-delete {
+   margin: 20px 10px;
+   padding: 15px 20px;
+   background-color: red;
+   color: #333;
+   border-radius: 5px;
+   text-transform: uppercase;
+   font-weight: bold;
+   cursor: pointer;
+   transition: all 0.3s;
+ }
+
+ .btn-delete:hover {
+   background-color: green;
+   color: #fff;
+ }
+
+ .product-infos .note {
+    font-size: 14px;
+    color: #555;
+    margin-top: 20px;
+    line-height: 1.4;
+ }
+
+@media (max-width: 1024px) {
+   .product-infos {
+      max-width: 90%;
+   }
+}
+
+@media (max-width: 768px) {
+   .products-details {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+   }
+   .product-infos h1 {
+      font-size: 20px;
+   }
+   .product-infos .description {
+      font-size: 14px;
+   }
+   .add-to-cart {
+      width: 100%;
+   }
+   .size-options button {
+      font-size: 12px;
+      padding: 8px 10px;
+   }
+}
+
+@media (max-width: 480px) {
+   .product-details img {
+      width: 100%;
+      margin-bottom: 20px;
+   }
+   .product-infos .note {
+      font-size: 12px;
+   }
+   .size-options {
+      justify-content: center;
+   }
+}

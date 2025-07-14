@@ -1,0 +1,8 @@
+.contacto {
+    width: 100%;
+    height: 90vh;
+    background:url(./src/assets/bg.png);
+    padding-top: 5%;
+    background-repeat: no-repeat;
+    background-size: cover;
+}

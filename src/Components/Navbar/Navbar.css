@@ -1,0 +1,141 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    background-color: #fff;
+    border-bottom: 5px solid #ddd;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #9893fb;
+    //*cursor: pointer;*/
+}
+
+.logo span {
+    color: #000;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    flex: 1;
+    margin-left: 2rem;
+}
+
+.nav-links, .nav-admin-login {
+    display: flex;
+    list-style: none;
+    gap: 1rem;
+    margin: 0 20px;
+    padding: 0;
+}
+
+.nav-links a, .nav-admin-login a {
+    text-decoration: none;
+    color: #555;
+    font-size: 14px;
+}
+
+.nav-links a:hover {
+    color: #9893fb;
+}
+
+.icons {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.search-bar {
+    padding: 0.5rem;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    outline: none;
+}
+
+.search-button, 
+.icon-button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #333;
+    transition: color 0.2s ease;
+ }
+
+ .search-button:hover, 
+ .icon-button:hover {
+    color: #9893fb;
+ }
+
+.icon-button {
+    position: relative;
+    display: inline-block;
+}
+
+.counter {
+    position: absolute;
+    top: -5px;
+    right: -5px;
+    border-radius: 50%;
+    width: 18px;
+    height: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 10px;
+    color: #fff;
+    background-color: #9893fb;
+}
+
+.menu-btn {
+    display: none;
+    background: blue;
+    border: 2px red solid;
+    color: black;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+.icon {
+    font-size: 1.5rem;
+    cursor: pointer;
+    display: none;
+}
+
+@media (max-width: 768px) {
+    .logo {
+    font-size: 18px;
+    font-weight: bold;
+    color: #9893fb;
+    }
+    .icon {
+        display: block;
+    }
+
+    .header .nav-links {
+        flex-direction: column;
+    }
+
+    .header .navbar {        
+        flex-direction: column;
+        justify-content: space-evenly;
+        font-weight: 600;
+        background-color: #9893fb;
+        position: absolute;
+        width: 250px;
+        height: 60vh;
+        top: -800px;
+        right: 5%;
+        z-index: 1;
+    }
+
+    .navbar.active {
+        top: 15%;
+    }
+}
